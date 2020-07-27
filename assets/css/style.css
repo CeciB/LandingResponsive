@@ -1,0 +1,504 @@
+/*font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;*/
+*{
+  box-sizing:border-box;
+}
+
+:root{
+  --bg-color:#EED870;
+}
+
+body{
+  margin:0.5%;
+}
+
+.encabezado{
+  display:flex;
+  flex-flow:column nowrap;
+  justify-content:center;
+  align-items:center;
+  /*background-image:url(../image/bg.png);
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center center;*/
+  position:relative;
+  width:100%;
+  height:6%;
+}
+
+.encabezado h1{
+  text-align:center;
+  font-family:'Open Sans', sans-serif;
+  font-size:1.5rem;
+  font-weight:600;
+  text-transform:uppercase;
+  background-color:var(--bg-color);
+  background-size:cover;
+  width:100%;
+  margin:0 auto;
+  padding-top:2.5rem;
+  color:#333;
+  line-height:120%;
+  letter-spacing:4px;
+  padding-left:0.4rem;
+  padding-right:0.4rem;
+}
+
+.encabezado .logo{
+  width:100%;
+  position:relative;
+  display:flex;
+  flex-flow:column;
+  align-items:center;
+  max-width:50rem;
+  z-index:1;
+}
+
+.encabezado .logo img{
+  width:100%;
+  height:8.5rem;
+}
+
+.logo nav{
+  width:100%;
+}
+
+.logo nav ul{
+  display:inline-flex;
+  width:100%;
+  list-style:none;
+  justify-content:space-around;
+  padding:0;
+}
+
+.logo nav ul li a{
+  font-family:'Open Sans', sans-serif;
+  text-decoration:none;
+  color:var(--bg-color);
+  font-size:0.8rem;
+  font-weight:500;
+}
+
+.logo nav li .submenu{
+  flex-direction:column;
+  display:none;
+  text-align:left;
+}
+
+.logo nav li:hover .submenu{
+  display:block;
+}
+
+.logo nav{
+  text-align:center;
+}
+
+.logo nav ul li a:hover {
+  background-color:#ddd;
+  color:black;
+}
+
+.seccion1, .seccion2{
+  padding:1.5rem;
+}
+
+.caja1{
+  display:flex;
+  flex-flow:column nowrap;
+  align-items:center;
+}
+
+h2{
+  font-family:'Open Sans', sans-serif;
+  font-size:1.5rem;
+  font-weight:500;
+  color:#818286;
+  text-align:center;
+}
+
+h2 span{
+  color:#202c39;
+  font-weight:400;
+}
+
+.container-text{
+  text-align:center;
+}
+
+.container-text .text h3{
+  font-family:'Open Sans', sans-serif;
+  color:#333;
+  font-size:1rem;
+  font-weight:700;
+}
+
+.text{
+  font-family:'Open Sans', sans-serif;
+  text-align:center;
+}
+
+.container-text .text p{
+  font-size:1rem;
+  font-weight:100;
+  text-align:center;
+}
+
+.seccion2 .subtitulo2{
+  display:flex;
+  flex-flow:column wrap;
+  align-items:center;
+  justify-content: center;
+  text-align:center;
+}
+
+.seccion2 .subtitulo2 h2{
+  text-align:center;
+  flex-basis:70%;
+  background-color:var(--bg-color);
+  width:83%;
+}
+
+.seccion2 .subtitulo2 h3{
+  text-align:center;
+  font-family:'Open Sans', sans-serif;
+  font-size:1.5rem;
+  font-weight:700;
+}
+
+.seccion2 .content-bajada{
+  display:flex;
+  flex-flow:row wrap;
+  width:100%;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.seccion2 .bajada1, .bajada2, .bajada3{
+  flex-basis:29%;
+  text-align:center;
+  font-family:'Open Sans', sans-serif;
+}
+
+.content-bajada #p-nro{
+  font-size:3.5rem;
+  font-weight:100;
+  margin:0 auto;
+}
+
+.content-bajada span{
+  font-weight:300;
+  font-size:1rem;
+}
+
+.content-bajada p{
+  font-size:1rem;
+  font-weight:400;
+  margin:0 auto;
+}
+
+.seccion3{
+  display:flex;
+  flex-flow:row wrap;
+  justify-content:center;
+}
+
+.seccion3 .subtitulo3 h2{
+  color:var(--bg-color);
+  letter-spacing:0.5rem;
+  font-family:'Montserrat', sans-serif;
+  font-size:2.7rem;
+  font-weight:100;
+}
+
+.seccion3 .block-yellow{
+  background-image:url(../image/bg.png);
+  background-size:cover;
+  height:6%;
+}
+
+.invitacion p{
+  font-family:'Open Sans', sans-serif;
+  font-size:1rem;
+  font-weight:300;
+  margin:5px auto;
+  width:75%;
+}
+
+.seccion3 .casilla{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  margin:5px auto;
+}
+
+.seccion3 .block-yellow .formulario .casilla input{
+  width:85%;
+  padding:0.5%;
+  font-family:'Open Sans', sans-serif;
+  border-radius:5px;
+  border:1px solid #818286;
+  background-color:transparent;
+  margin:1px;
+}
+
+.seccion3 .block-yellow .formulario .casilla #nombre_completo, #mail, #nro_tel{
+  background-color:#fafafa;
+}
+
+.seccion3 .block-yellow .formulario .casilla .boton{
+  width:30%;
+  padding:0.5%;
+  border-radius:5px;
+  background-color:var(--bg-color);
+  border:1px solid #818286;
+  color:white;
+  font-size:inherit;
+  font-weight:500;
+  letter-spacing:0.1em;
+  transition:background-color .5s;
+}
+
+.seccion3 .block-yellow .formulario .casilla .boton:hover{
+  background-color:gold;
+}
+
+.pie-pagina{
+  background-color:#7d8597;
+  padding:0.5px 0px;
+  font-family:'Open Sans', sans-serif;
+}
+
+.pie-pagina .container p{
+  color:#fafafa;
+  font-size: 0.8rem;
+  /*text-align:left!important;*/
+}
+
+@media screen and (min-width: 573.9px){
+  body{
+    margin:0;
+  }
+
+  .container{
+    max-width:1140px;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  .encabezado{
+    background-image:url(../image/bg.png);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center center;
+  }
+
+  .encabezado h1{
+  font-size:3em;
+  line-height:120%;
+  letter-spacing:8px;
+  text-align:center;
+  background-color:transparent;
+  padding-top:7rem;
+  }
+
+  .encabezado .logo{
+    top:5rem;
+    background-color:#EED870;
+    justify-content:center;
+  }
+
+  .encabezado .logo img{
+    width:30rem;
+    height:9.5rem;
+  }
+
+  .logo nav{
+    display:none;
+  }
+
+  .principal{
+    padding-top:150px;
+  }
+
+  .caja1{
+    flex-flow:row wrap;
+    width:100%;
+  }
+
+  .caja1 h2{
+    flex-basis:100%;
+    text-align:center;
+  }
+
+  h2{
+    font-weight:300;
+    font-size:3.1rem;
+    letter-spacing:1.3rem;
+  }
+
+  .container-text{
+    display:flex;
+    justify-content:space-between;
+  }
+
+  .container-text .text{
+    font-family:'Open Sans', sans-serif;
+    text-align:center;
+    flex-basis:30%;
+  }
+
+
+  .container-text .text h3{
+    font-weight:700;
+    font-size:1.7rem;
+  }
+
+  .container-text .text p{
+  width:87%;
+  margin:0 auto;
+  font-weight:500;
+  font-size:1.1rem;
+  }
+
+  .linea{
+    background-color:#EED870;
+    width:.5rem;
+    border:1px solid #252627;
+  }
+
+  .caja1 .linea{
+    box-shadow:0 2px 0 #adb5bd;
+  }
+
+  .linea2{
+    background-color:#EED870;
+    width:.5rem;
+  }
+
+  .seccion2{
+  margin-top:10%;
+  }
+
+  .seccion2 .subtitulo2 h2{
+  flex-basis:76%;
+  }
+
+  .seccion2 .subtitulo2 h3{
+  font-size:3.4rem;
+  font-weight:800;
+  margin-block-start:0.5rem;
+  }
+
+  .seccion2 .content-bajada{
+    flex-flow:row nowrap;
+    font-family:'Open Sans', sans-serif;
+  }
+
+  .content-bajada #p-nro{
+    font-size:6rem;
+  }
+
+  .content-bajada span{
+    font-size:1.8rem;
+  }
+
+  .content-bajada p{
+    font-size:2.8rem;
+  }
+
+  .seccion2 .container-text{
+    margin-block-start:2.5rem;
+  }
+
+
+  .seccion2 .bajada2 p{
+    letter-spacing:1.3rem;
+  }
+
+  .seccion2 .container-text .text #subtit-esp{
+    width:114%;
+  }
+
+  .seccion3, .pie-pagina{
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  .seccion3 .subtitulo3 h2{
+    text-align:center;
+    font-size:7.3rem;
+    letter-spacing:0.5rem;
+  }
+
+  .seccion3 .block-yellow{
+    background-color:var(--bg-color);
+    background-image:none;
+    width:100%;
+  }
+
+
+  .seccion3 .block-yellow .container{
+    display:flex;
+    justify-content:space-between;
+    align-items: baseline;
+  }
+
+
+  .invitacion{
+    flex-basis:40%;
+  }
+
+  .invitacion p{
+    font-size: 2.1rem;
+    color:#333;
+  }
+
+  .formulario{
+    margin-top:3%;
+    margin-bottom:3%;
+    flex-basis:50%;
+  }
+
+  .seccion3 .casilla{
+    display:flex;
+    flex-flow:column nowrap;
+    align-items:flex-end;
+    width:90%;
+  }
+
+  .seccion3 .block-yellow .formulario .casilla input{
+    padding:3%;
+    width:100%;
+    font-family:'Open Sans', sans-serif;
+    border-radius:10px;
+    border:1px solid #818286;
+  }
+
+  .seccion3 .block-yellow .formulario .casilla #mail, #nro_tel{
+    margin-top:5%;
+  }
+
+  .seccion3 .block-yellow .formulario .casilla .boton{
+    margin-top:5%;
+    width:35%;
+    padding:3%;
+    border-radius:10px;
+    background-color:#d2af3b;
+    border:none;
+    color:whitesmoke;
+    font-size:inherit;
+    font-weight:500;
+    letter-spacing:0.1em;
+    transition:background-color .5s;
+  }
+
+  .pie-pagina{
+    padding:18px 0px;
+  }
+
+  .pie-pagina .container p{
+    color:#fafafa;
+    text-align:left!important;
+  }
+}
